@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('images/background_image.png'); /* Replace 'background-image.jpg' with your image file */
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Make body a positioned parent for overlay */
+  }
+  
+  /* Overlay */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 255, 0.5); /* Semi-transparent blue overlay */
+    backdrop-filter: blur(10px); /* Apply blur to the overlay */
+  }
+  
+  header {
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+    z-index: 1; /* Ensure header appears above the overlay */
+  }
+  
+  #title {
+    font-size: 2.5em;
+    color: #ffffff; /* Darker text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for visibility */
+  }
+  
+  #description {
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+  
+  #survey-form {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    max-width: 500px;
+    margin: 50px auto; /* Center the form horizontally */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  select {
+    appearance: none; /* Remove default arrow icon */
+  }
+  
+  fieldset {
+    margin-bottom: 15px;
+  }
+  
+  legend {
+    font-weight: bold;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db; /* Blue button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+  }
+  
